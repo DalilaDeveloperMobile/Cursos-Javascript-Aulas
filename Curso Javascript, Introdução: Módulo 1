@@ -1,0 +1,293 @@
+ // Javascript
+             
+             // Aula 1
+
+              // Mostrar Hello World no Console.
+             //console.log('Hello World');
+
+             // Aula 2
+             // Variáveis e dados.
+
+             //Não presiza declarar variável. Ex: Double, float e etc.
+             //Pode atribuir valores de diferentes formatos as mesmas variáveis.
+             
+              //var nome = "Dalila"; //String.
+              //var idade = 23; //Inteiro.
+              //var peso = 80.5;// Float.
+              //var humano = true; // Boleano, Verdadeiro (true) ou Falso (false). 
+              
+              //var alunos = ['Dalila', 'Diego', 'Ismael']; //Vetores.
+             
+             //  Programação Orientada a Objetos.
+             //  Variáveis que guardam mais de um valor.
+             //  Que guardam todos os valores referentes aquele item.
+             
+             // Ex: Atibuir todos os valores, propriedades do (Objeto Aluno).
+             // var aluno = { nome: 'Dalila', idade: 23, peso: 80.5, humano: true };  
+             
+              // Função global, ele deixa escrever no depurador do console do navegador.
+              // Por meio do (ferramentas do desenvolvedor).
+
+              //Imprimindo Variaveis, com a função global. 
+              
+              // Pode mostrar as variáveis:
+             //console.log(nome); Imprimi Dalila. String.
+             
+             // Vetor sempre começa com 0 na posição em vez de 1 do javascript.
+             // console.log(alunos); Imprimi Nome dos Alunos. 
+             
+             // Posso buscar no array por posição.  
+             // console.log(alunos[1]); [0] Dalila , [1] Diego e [2] Ismael. Imprimi Diego.
+             
+             // Posso buscar por valor no Objeto, informando o Objeto e Valor.
+              //console.log(aluno.nome); String.
+
+              // Posso reutilizar as variaveis anteriores pelas definidas.
+              // var aluno = { nome: alunos[0]};  
+              // console.log(aluno.nome);
+
+              // Variaveis Utilizadas nas Aplicações.
+              // String , Inteiro , float , Boleano.
+              // Vetores e Objetos. 
+
+              // Aula 3
+              // Operações Matemáticas no JavaScript.
+              
+              // var x = 10, y = 5;
+              // Posso exibir duas informações.
+              // console.log(x,y);
+              
+              // Exibir algumas operações matemáticas.
+              //var resultado = x + y;
+              //var resultado = x / y;
+              //var resultado = x * y;
+              //var resultado = x - y;
+              
+              // var resultado = x % y; Modolo o resto da divisão.
+              // para saber números pares , impares e etc.
+              // console.log(resultado);
+              // Não pode somar números com uma String.
+              // var x = "10", y = 5;
+
+              // fazer um incremento de x em 3;
+              // x = x + 3; igual á.
+              // x += 3; Soma + 3.
+              // x *= 3; Mútiplica por * 3.
+              // x /= 3; Divide por / 3.
+              // x -= 3; Subitrai por - 3.
+
+              // imprimir o incremento em 3;
+             // console.log(x);
+
+              // pode mutiplicar uma variavel por outra.
+              // x *= y;
+
+              // pode somar uma variavel por outra.
+              // x += y;
+
+              // pode subtrair uma variavel por outra.
+              // x -= y;
+
+              // pode dividir uma variavel por outra.
+              // x /= y;
+
+               // imprimir a operação de uma variavel por outra.
+              // console.log(x);
+              
+             // Aula 4
+             // Funções no JavaScript.
+
+             // para criar uma função presiza definir a palavra: function.
+             // nome da função: soma().
+             // dentro dos parenteses () definir os parametros: (numero1, numero2){ Corpo da Função, que vai executar quando for chamada. } 
+             // A qual vou receber. (numero1, numero2){ Corpo da Função, que vai executar quando for chamada. }
+            
+             // { Vai somar o numero1 e numero2, 
+             // var resultado = numero1 + numero2; 
+            
+             // retorna o valor, 
+             // return resultado; }
+
+             // Não presiza definir a variavel.
+             
+             //function soma(numero1, numero2){
+             //   var resultado = numero1 + numero2;
+                 
+                // return resultado;
+             // }
+             
+             // definir os parametros da soma.
+             // var resultado só é visivel dentro da função,
+             // por isso foi presizo declarar dinovo. 
+             // var resultado = soma(1, 2);
+             // imprimir o resultado da soma.
+             // não presiza definir qual variavel retorna, inteiro, boleano e etc.
+             // console.log(resultado);
+
+             // Aula 5
+             // Condicionais dentro do JavaScript.
+             
+             // Aprender a escrever if , else e Switch.
+             
+             // Receber sexo do individo.
+             // function retornaSexo(sexo){
+               // M, F
+               // Retornar por inteiro.
+               // Masculino, Feminino 
+               // Dependendo da Variavel.  
+                 
+                 // ver se é igual a M, Masculino.
+                 // if (sexo == 'M'){}
+              
+                  // ver se a variavel também é igual.            
+                 // if (sexo === 'M'){} 
+                 
+                 // condição criada if e else.
+                 // if (sexo === 'M'){
+                 //   return 'Masculino';
+
+                // }else{
+                //    return 'Feminino';
+                // }
+              
+                  // condição criada if , else if e else.
+                 // if (sexo === 'M'){
+                 //   return 'Masculino';
+
+                // }else if(sexo === 'F'){
+                //    return 'Feminino';
+                // }else{
+                //     return 'Outro';
+                // }
+
+                // condição criada com Switch Case.
+               // switch (sexo){
+               //   case'M':
+               //     return 'Masculino';
+               //   case 'F':
+               //     return  'Feminino';
+               //   default: 
+               //     return 'Outro';  
+               // }
+              // }
+
+              //    var resultado = retornaSexo('F');
+              //  console.log(resultado);
+
+              // Aula 6
+              // Operadores Lógicos dentro do JavaScript.
+
+             // AND (E) && , OR (OU) ||, NOT (NÃO) !. 
+             // AND tenque ser verdade as duas condições.
+             // OR tenque ser verdade uma condição.
+             // NOT desigualdade entre duas variáveis.
+
+            // var sexo = 'M' , idade = 23;
+
+            // if(sexo === 'M' || idade >= 18){
+            //     console.log('OK');
+            // }
+
+            // NOT quando quer negar uma variavel.
+            //var sexo = 'F';
+
+            //if (sexo !== 'M'){
+            //    console.log('OK');
+            //}
+
+            // Armazenar o valor das condições em Variavel.
+            
+            //var sexo = 'M';
+             
+            //var masculino;
+
+            //if (sexo === 'M'){
+              //  masculino = true;
+            //}else{
+              //  masculino = false;  
+            //}
+            // console.log(masculino);
+
+            // Para diminuir o codigo, outra forma seria.
+
+            // var sexo = 'F';
+            // var masculino = sexo === 'M';           
+            // console.log(masculino);
+
+            // Aula 7
+            // Condição Ternária dentro do JavaScript.
+             
+
+           // var sexo = 'M';
+
+           // if (sexo === 'M'){
+           //   return 'Masculino';
+           // }else{
+           //   return 'Feminino'; 
+           // }
+
+             
+              // Posso diminuir a condição.
+             // Condição Ternária
+            // É quando só tem duas verificações. if e else na mesma linha.
+            
+            //var sexo = 'F';
+
+            //var retorno = (sexo === 'M') ? 'Masculino': 'Feminino';
+            //console.log(retorno);
+            //vai ser muito usado na criação das aplicações em JavaScript.
+             
+            // Aula 8
+            // Estruturas de Repetição dentro do JavaScript. 
+            // Aprender um for e um while.
+            // Valor da variavel (var i = 0); 
+            // Condição da Variavel (i <= 100;);
+            // Incremento (i++);
+            
+            // For
+            // Vou ter o número de 0 até 100.
+            //for (var i = 0; i <= 100; i++){
+            //   console.log(i); 
+            //}
+
+            //While
+            //var j = 0;
+            //while (j <= 100){
+            //console.log(j);
+
+            //j++;
+            //}
+
+            // Quando sabe o numero do valor final ou
+            // quando sabe o número das interações.
+            // deve usar o For e quando não sabe, o while.
+             
+            //var j = 219345872;
+            //while (j > 50){
+            //  console.log(j);
+
+            //   j /= 5;
+            //}
+
+
+            // Aula 9
+            // Intervalo e Timeout dentro do JavaScript.
+            
+            // Começo definindo um intervalo com setInterval.
+
+            //function exibeAlgo(){
+            //    console.log('Hello World');
+            //}
+            // setInterval(exibeAlgo, 1000);
+            // Para Execultar a Função não presiza passar os parametros,  exibeAlgo() 
+            // só referencia a função, exibeAlgo.
+             
+             // Execulta, a cada 1 segundo 1000 Mosta a Informação Hello Word.
+             
+             // Outro Conseito é o setTimeout.
+             
+            // function exibeAlgo(){
+            //    console.log('Hello World');
+            //}
+            // setTimeout(exibeAlgo, 5000);
+             // Mostra a informação só uma vez, com um espaço de 5 segundos.

@@ -1,0 +1,295 @@
+  <!--  Aula 1. Eventos inline.-->
+
+        <!-- Evento Acontece quando Clica no Botão com (onclick). -->
+        <!-- Com a Função global (alert) ao clicar no botão aparece a 
+        mensagem (Botão foi clicado). -->
+
+        <!--<div id="app">
+            <button onclick="mostraAlerta()">Me pressione</button>
+         </div>  -->
+
+
+        <!-- Evento Acontece quando Passar o mouse por cima do Botão com (onmouseover). -->
+         <!-- Com a Função global (alert) ao passar o mouse por cima do botão aparece a 
+        mensagem (Botão foi clicado). -->
+        
+        <!--<div id="app">
+            <button onmouseover="mostraAlerta()">Me pressione</button>
+         </div> -->
+
+
+        <!-- Pode fazer também com o (input) com (onkeydown), (onkeypress) ou (onkeyup) -->
+        <!--(onkeydown) Quando apertar uma tecla. -->
+        <!--(onkeyup) Quando soltar uma tecla. -->
+        <!--(onkeypress) Quando terminar de clicar e soltar uma tecla. -->
+         
+        <!--<div id="app">
+           <input onkeypress="mostraAlerta()" />
+         </div>-->
+
+         <!-- Aula 2
+              // Trabalhando com a Dom.              
+              // Vamos ver nessa Aula:
+              // Como ajente consegue referenciar os Elementos da nossa Dom.
+              // do HTML refente ao JavaScript. 
+              // E não simplismente desparar eventos do HTML para o JavaScript.
+              // Buscar a arvore de elementos através do Script.-->
+
+         <!--<div id="app">
+           <input type="text" name="nome" id="nome" class="nome" />
+           <button class="botao">Adicionar</button>
+         </div>-->
+
+         <!-- No querySelectorAll posso usar o input ou outro elemento.-->
+         <!-- Para passar mais de um elemento tem que ser o querySelectorAll.-->
+
+         <!--<div id="app">
+            <input type="text" name="nome" id="nome" class="nome" />
+            <input type="text" name="nome" id="nome" class="nome" />
+            <button class="botao">Adicionar</button>
+          </div>-->
+
+          
+         <!-- Vou mostrar no meu alert o que está escrito no meu input.-->
+
+          <!-- <div id="app">
+            <input type="text" name="nome" id="nome" class="nome" />
+            <button class="botao">Adicionar</button>
+          </div> -->
+ 
+          <!-- Aula 3
+          Lidando com Elementos. --> 
+
+          <!-- vamos jogar o  linkElement dentro do html. 
+           Temos que referenciar a div="app".-->
+
+            <!--<div id="app">
+           
+
+            </div> -->
+
+            <!-- Remover o input do JavaScript.-->
+
+            <!-- <div id="app">
+            
+              <input id="nome" />
+
+            </div> -->
+          
+            <!-- Aula 4
+                Alterando estilos. 
+      
+               Além de poder Manipular os Atributos dos nossos elementos.
+               E adicionar novos elementos e remover.
+               Também posso controlar as estilizações CSS dos elementos através do JavaScript.
+               Vou referenciar a class box da div dentro do meu JavaScript-->
+
+               <!--  <div id="app">
+            
+                 <div class="box"></div>
+
+                 </div> -->
+
+        <script>
+         
+         // Javascript
+             
+             // Aula 1
+             // Eventos inline.
+
+             //Como o JavaScript faz para Manipular a Dom. 
+             // A Dom é a Arvore de Elementos dentro do nosso HTML.
+             // Tudo que está sendo criado dentro do HTML faz parte da Dom.
+             // A Dom é composta por todos os Elementos dispostos em tela.
+             // Vamos poder Manipular os Elementos da Dom.
+             // Quando um mouse passa em cima de um boão, quando o botão é clicado.
+
+             // Na Aula de Hoje:
+             // Vamos descobrir quando um usuario pasou o mouse por cima do botão ou clicou. 
+             // Os Eventos podem ser usados em qualquer outro Elemento da Dom.
+
+             
+
+
+             // Vamos començar Criando uma Função.
+             // Vamos usar a função alert().
+             // alert() Que é a função global do JavaScript para mostrar um alerta em Tela.
+
+             //function mostraAlerta() {
+             //     alert('Botão foi clicado');
+             //   }    
+
+             //   function mostraAlerta() {
+             //     alert('Passou o Mouse Por Cima do Botão');
+             //   } 
+
+             //   <!-- Ver a mensagem do alert, (onkeypress) Quando terminar de clicar e soltar uma tecla. -->
+             
+             //function mostraAlerta() {
+             //     alert('Terminou de clicar e soltar uma tecla');
+             //   }
+
+                // Essas são as formas de controlar Eventos desparados pela Dom no JavaScript.
+        
+        
+              // Aula 2
+              // Trabalhando com a Dom. 
+
+              // Vamos ver nessa Aula:
+              // Como ajente consegue referenciar os Elementos da nossa Dom.
+              // do HTML atraves do JavaScript. 
+              // E não simplismente desparar eventos do HTML para o JavaScript.
+              // Buscar a arvore de elementos através do Script.
+              // (inputElement) minha variavel. 
+              // (inputElement) Armazenar na Variavel o elemento (input).
+              // Tem varias formas de conseguir isso. adicionando um (id="").
+              // É mais uma forma de referenciar. 
+              // A primeira forma de buscar esse elemento na Dom .
+              // É usando a variavel global (document).
+              // (document) Que refencia a arvore de elementos. 
+              // getElementById('nome'); vai buscar um elemento com (id nome). 
+        
+             // var inputElement = document.getElementById('nome');
+        
+             //  console.log(inputElement);
+
+               // Vai imprimir no console <input type="text" name="nome" id="nome" /> 
+        
+        // vamos aprender a trabalhar o (inputElement).
+        // vamos aprender outras formas de buscar o (inputElement).
+        // Na nossa arvore de elementos.
+
+         //getElementsByTagName('input'); vai buscar todos elementos com a tag (input).
+         // Se for um input especifico, vai buscar por vetor getElementsByTagName('input')[0];   
+          
+         // var inputElement = document.getElementsByTagName('input');
+        
+         //      console.log(inputElement);
+
+        // getElementsByClassName('nome'); vai buscar uma class com valor nome.
+        
+        // var inputElement = document.getElementsByClassName('nome');
+        
+        //       console.log(inputElement);
+        
+        // querySelector é uma outra forma de buscar nossos elementos na Dom.
+        // Ele deixa percorer a nossa Dom até ele encontrar nosso elemento. 
+        // Posso falar exatamente onde o input está.
+
+        // Vou falar que o input está dentro do body.
+        // E depois está dentro de uma div#app.
+        // E depois o input que está dentro da div#app.
+        // Não presiza colocar body pois ele sempre vai existir.
+
+        // var inputElement = document.querySelector('div#app input');
+        
+        //       console.log(inputElement);
+        
+        // No querySelector posso usar os atributos do input.
+        // Posso usar um Atibuto que tenha um name com o nome (name="nome"). 
+        // Estou referenciando uma propriedade do meu elemento.
+
+        // var inputElement = document.querySelector('input[name=nome]');
+        
+        //      console.log(inputElement);
+
+        // Se eu passar só input, ele vai mim mostrar o primeiro input.
+        // querySelector só mostra um elemento.
+        //  var inputElement = document.querySelector('input');
+        
+        //      console.log(inputElement);
+
+        // Vai imprimir no console <input type="text" name="nome" id="nome" />   
+
+        // Para passar mais de um elemento tem que ser o querySelectorAll.
+        // será precizo quando for buscar elementos em tela.
+
+        // var inputElement = document.querySelectorAll('input');
+        
+        //      console.log(inputElement);  
+
+        // Agora pode referenciar os elementos pelo javascript em vez de ser pelo HTML.  
+        // Funciona da Seguinte forma, temos uma variavel btnElement.
+        // Quero buscar o elemento button que tem a class="botao".
+        // Em vez de declarar o onclick no HTML declaramos no JavaScript.
+        // E criamos uma função e colocamos um alert.
+     
+       // var btnElement = document.querySelector('button.botao'); 
+
+       // btnElement.onclick = function(){
+            
+       //     alert('Botão Clicado');
+
+       // }
+
+         
+        // Vou mostrar no meu alert o que está escrito no meu input. 
+        
+        // var inputElement = document.querySelector('input[name=nome]');
+        // var btnElement = document.querySelector('button.botao'); 
+
+        // btnElement.onclick = function(){
+            // consigo recuperar o valor do elemento input dentro do JavaScript.
+           // var text = inputElement.value;
+            
+           // alert(text);
+
+       // }
+
+       // Começamos a Manipular todos os objetos da Dom. Pelo JavaScript. 
+       // Não presiza sujar o HTML com essas funções.
+       
+
+       // Aula 3
+      // Lidando com Elementos. 
+
+      // Além da gente poder referenciar elementos da nossa Dom através do JavaScript.
+      // Agente pode criar novos elementos através do JavaScript com o createElement('a'); 
+      // pasando a tag que agente que criar.
+
+     // var linkElement = document.createElement('a');
+
+     // linkElement.setAttribute('href', 'http://rocketseat.com.br' );
+       
+      // E agora agente presiza incluir um texto dentro do link.
+      // Exemplo um Texto: Acessar Site da Rocketseat. 
+      // Para isso tem que criar um Elemento para o Texto também.
+      // Mesmo que não seja um componente um elemento para o HTML.
+        
+      //var textElement = document.createTextNode('Acessar Site da Rocketseat');  
+
+      // Agente presiza pozisionar o texto dentro do elemento com o link.  
+      // Temos que adicionar o textElement como filho do linkElement.
+    
+      //linkElement.appendChild(textElement);
+
+      // vou ter agora <a href="http://rocketseat.com.br">Acessar Site da Rocketseat</a>  
+      
+      // vamos jogar o  linkElement dentro do html. 
+      // Temos que referenciar a div="app".
+      
+      //var containerElement = document.querySelector('#app');
+
+      // Agora vamos jogar o  linkElement dentro do corpo.
+
+      //containerElement.appendChild(linkElement);
+
+      // Remover o input do JavaScript.
+
+      //var inputElement = document.querySelector('#nome');
+      //containerElement.removeChild(inputElement);
+
+      // Aula 4
+      // Alterando estilos. 
+
+      // Além de poder Manipular os Atributos dos nossos elementos.
+      // E adicionar novos elementos e remover.
+      // Também posso controlar as estilizações CSS dos elementos através do JavaScript. 
+
+      // Vou referenciar a class box da div dentro do meu JavaScript.
+
+      //var boxElement = document.querySelector('.box');  
+      
+     // boxElement.style.width = 100;
+     // boxElement.style.height = 100;
+     // boxElement.style.backgroundColor = '#f00';
